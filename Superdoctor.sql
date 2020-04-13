@@ -1,70 +1,67 @@
-#------------------------------------------------------------
-#        Script MySQL.
-#------------------------------------------------------------
+DROP TABLE IF EXISTS Patient;
+DROP TABLE IF EXISTS Ordonnance;
+DROP TABLE IF EXISTS Praticien;
+DROP TABLE IF EXISTS Agenda;
 
 
-#------------------------------------------------------------
-# Table: patient
-#------------------------------------------------------------
+CREATE TABLE Patient(
+        Pat_id        INT UNSIGNED AUTO_INCREMENT,
+        Pat_nom       VARCHAR (100) NOT NULL ,
+        Pat_prenom    VARCHAR (100) NOT NULL ,
+        Pat_sexe      CHAR(1) NOT NULL ,
+        Pat_adresse   VARCHAR (128) NOT NULL ,
+        Pat_naissance DATE NOT NULL ,
+        Pat_mdp       VARCHAR (128) NOT NULL ,
+        Pat_allergie  VARCHAR (255) NOT NULL ,
+        Pat_email     VARCHAR (128) UNIQUE NOT NULL,
+        PRIMARY KEY (Pat_id)
+);
 
-CREATE TABLE patient(
-        pat_id        Int  Auto_increment  NOT NULL ,
-        pat_nom       Varchar (72) NOT NULL ,
-        pat_prenom    Varchar (72) NOT NULL ,
-        pat_sexe      Varchar (72) NOT NULL ,
-        pat_adresse   Varchar (128) NOT NULL ,
-        pat_naissance Date NOT NULL ,
-        pat_mdp       Varchar (128) NOT NULL ,
-        pat_allergie  Varchar (255) NOT NULL ,
-        pat_email     Varchar (128) NOT NULL
-	,CONSTRAINT patient_Idx INDEX (pat_email)
-	,CONSTRAINT patient_PK PRIMARY KEY (pat_id)
-)ENGINE=InnoDB;
-
-
-#------------------------------------------------------------
-# Table: Ordonnance
-#------------------------------------------------------------
-
-CREATE TABLE Ordonnance(
-        ord_id         Int  Auto_increment  NOT NULL ,
-        ord_medicament Varchar (255) NOT NULL ,
-        ord_date       Date NOT NULL
-	,CONSTRAINT Ordonnance_PK PRIMARY KEY (ord_id)
-)ENGINE=InnoDB;
-
-
-#------------------------------------------------------------
-# Table: Praticien
-#------------------------------------------------------------
 
 CREATE TABLE Praticien(
-        pra_id         Int  Auto_increment  NOT NULL ,
-        pra_nom        Varchar (72) NOT NULL ,
-        pra_prenom     Varchar (72) NOT NULL ,
-        pra_adresse    Varchar (72) NOT NULL ,
-        pra_telephone  Varchar (72) NOT NULL ,
-        pra_specialite Varchar (72) NOT NULL ,
-        pra_mdp        Varchar (72) NOT NULL ,
-        pra_email      Varchar (72) NOT NULL ,
-        ord_id         Int NOT NULL
-	,CONSTRAINT Praticien_Idx INDEX (pra_email)
-	,CONSTRAINT Praticien_PK PRIMARY KEY (pra_id)
-
-	,CONSTRAINT Praticien_Ordonnance_FK FOREIGN KEY (ord_id) REFERENCES Ordonnance(ord_id)
-)ENGINE=InnoDB;
+        Pra_id         INT UNSIGNED AUTO_INCREMENT,
+        Pra_nom        VARCHAR (100) NOT NULL,
+        Pra_prenom     VARCHAR (100) NOT NULL,
+        Pra_adresse    VARCHAR (100) NOT NULL,
+        Pra_telephone  VARCHAR (100) NOT NULL,
+        Pra_specialite VARCHAR (100) NOT NULL,
+        Pra_mdp        VARCHAR (100) NOT NULL,
+        Pra_email      VARCHAR (100) NOT NULL,
+        Id_ord         INT NOT NULL,
+        PRIMARY KEY (Pra_id)
 
 
-#------------------------------------------------------------
-# Table: consulter
-#------------------------------------------------------------
+);
 
-CREATE TABLE consulter(
-        pat_id Int NOT NULL ,
-        pra_id Int NOT NULL
-	,CONSTRAINT consulter_PK PRIMARY KEY (pat_id,pra_id)
 
-	,CONSTRAINT consulter_patient_FK FOREIGN KEY (pat_id) REFERENCES patient(pat_id)
-	,CONSTRAINT consulter_Praticien0_FK FOREIGN KEY (pra_id) REFERENCES Praticien(pra_id)
-)ENGINE=InnoDB;
 
+CREATE TABLE Agenda(
+        Agenda_ID  INT UNSIGNED,
+        Date_rdv DATETIME NOT NULL, 
+        Id_Pra INT UNSIGNED NOT NULL,
+        Id_Pat INT UNSIGNED NOT NULL,
+
+        CONSTRAINT fk_numero_Praticien
+        FOREIGN KEY (Id_Pra)
+        REFERENCES Praticien(Pra_id),
+
+        CONSTRAINT fk_numero_Patient
+        FOREIGN KEY (Id_Pat)
+        REFERENCES Patient(Pat_id)
+
+);
+
+
+
+CREATE TABLE Ordonnance(
+    Ord_id  INT UNSIGNED AUTO_INCREMENT,
+    Ord_traitement VARCHAR (255),
+    Ord_date DATE NOT NULL,
+    Ord_patient INT UNSIGNED NOT NULL,
+    PRIMARY KEY (Ord_id),
+
+    CONSTRAINT fk_numero_Patient_Ord
+    FOREIGN KEY (Ord_patient)
+    REFERENCES Patient(Pat_id)
+
+);

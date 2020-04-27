@@ -27,6 +27,12 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- =======================================================
+  * Template Name: NewBiz - v2.0.0
+  * Template URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
@@ -36,9 +42,9 @@
     <div class="container">
 
       <div class="logo float-left">
-        
+        <!-- Uncomment below if you prefer to use an text logo -->
         <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-        <a href="#intro" class="scrollto"><img src="assets/img/logoSD2.png" alt="" class="img-fluid"></a>
+        <a href="#intro" class="scrollto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
@@ -68,7 +74,7 @@
       </div>
 
       <div class="intro-info">
-        <h2>Réservez dès maintenant  <br><span>RDV</span><br>rapides !</h2>
+        <h2>Réserver a tous moment ! <br><span>solutions</span><br>Efficacité !</h2>
         <div>
           <a href="#about" class="btn-get-started scrollto">Commencer</a>
           <a href="#services" class="btn-services scrollto">Nos services</a>
@@ -165,7 +171,7 @@
 
         <header class="section-header">
           <h3>Services</h3>
-          <p>Dans cette section est disponible un ensemble de servirs médicaux propopées au patiens souhaitant prendre un rendez-vous.</p>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
         </header>
 
         <div class="row">
@@ -173,47 +179,45 @@
           <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
-              <h4 class="title"><a href="">Médecin Généraliste</a></h4>
-              <p class="description">Consultation : Constipation, Diarrhée ou vomissements, Douleur abdominale, Brûlures d’estomac et reflux </p>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div>
-              <h4 class="title"><a href="">Dentiste</a></h4>
-              <p class="description">Les soins dentaires sont nombreux : Visite de contrôle, détartrage, plombage, scellement des sillons, prothèses dentaires ...</p>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
-              <h4 class="title"><a href="">Ophtalmologue</a></h4>
-              <p class="description">Cataracte, chirurgie réfractive, glaucome, maladies de la cornée ou de la conjonctive, maladies de la rétine, maladies des paupières</p>
+              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
-              <h4 class="title"><a href="">Médecines Spécialisées</a></h4>
-              <p class="description">Le service de médecines spécialisés regroupe trois secteurs d'activités à savoir :
-              diabétologie, endocrinologie et nutrition
-              </p>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-world-outline" style="color: #d6ff22;"></i></div>
-              <h4 class="title"><a href="">Médecine du sport</a></h4>
-              <p class="description">Consultations spécialisées de médecine générale, cardiologie, rééducation fonctionnelle, traumatologie, rhumatologie, pédiatrie, nutrition</p>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-clock-outline" style="color: #4680ff;"></i></div>
-              <h4 class="title"><a href="">Psychologie</a></h4>
-              <p class="description"> Addiction au sexe, Addiction aux jeux, Adoption, Affirmation de soi, Agressivité, Alcoolisme, Anorexie, Anorgasmie, Anxiété ...</p>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
             </div>
           </div>
 
@@ -677,7 +681,7 @@
 
           <div class="col-lg-6">
             <div class="map mb-4 mb-lg-0">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1855.5277380040245!2d2.3085310308545455!3d48.87513202419628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc70191e4d7%3A0x6b116a065eff63c5!2s31%20Rue%20de%20Courcelles%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1587204737662!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
           </div>
 
@@ -685,15 +689,15 @@
             <div class="row">
               <div class="col-md-5 info">
                 <i class="ion-ios-location-outline"></i>
-                <p>A108 Adam Street, NY 535022</p>
+                <p>31 Rue de Courcelles,75008 paris</p>
               </div>
               <div class="col-md-4 info">
                 <i class="ion-ios-email-outline"></i>
-                <p>info@example.com</p>
+                <p>superdoctor@contact.com</p>
               </div>
               <div class="col-md-3 info">
                 <i class="ion-ios-telephone-outline"></i>
-                <p>+1 5589 55488 55</p>
+                <p>0145683696</p>
               </div>
             </div>
 
@@ -701,28 +705,28 @@
               <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                 <div class="form-row">
                   <div class="form-group col-lg-6">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validate"></div>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Entrez votre nom..." data-rule="minlen:4" data-msg="Veuillez saisir au moins 4 caractères" />
+                    <div class="valider"></div>
                   </div>
                   <div class="form-group col-lg-6">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validate"></div>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Entrez votre mail..." data-rule="email" data-msg="Veuillez saisir un e-mail valide" />
+                    <div class="valider"></div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validate"></div>
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" data-rule="minlen:4" data-msg="Veuillez saisir au moins 8 caractères du sujet" />
+                  <div class="valider"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validate"></div>
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Veuillez saisir le message que vous souhaitez envoyer!" placeholder="Message"></textarea>
+                  <div class="valider"></div>
                 </div>
                 <div class="mb-3">
-                  <div class="loading">Loading</div>
+                  <div class="loading">Chargement</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message">Votre message a été envoyé. Je vous remercie!</div>
                 </div>
-                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+                <div class="text-center"><button type="submit" title="Send Message">Envoyer le message</button></div>
               </form>
             </div>
           </div>
